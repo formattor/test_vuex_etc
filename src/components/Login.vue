@@ -54,7 +54,7 @@ export default {
         if (valid) {
           this.logining = true
           if (this.ruleForm2.username === 'admin' &&
-                       this.ruleForm2.password === '123456') {
+            this.ruleForm2.password === '123456') {
             this.logining = false
             sessionStorage.setItem('user', this.ruleForm2.username)
             this.$router.push({path: '/vuex'})
